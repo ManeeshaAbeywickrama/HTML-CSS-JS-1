@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+body{
+    background: rgb(116, 196, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background-color: rgb(251, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container .left-side{
+    position: relative;
+    background: rgb(7, 77, 99);
+    padding: 40px;
+}
+
+.container .left-side .profile-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 6px;
+    color: #fff;
+    border-bottom: 1px solid lightblue;
+}
+
+.profile-text .imgbox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 90%;
+    overflow: hidden;
+}
+
+.profile-text .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+
+.profile-text h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contactinfo{
+    position: relative;
+    margin: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    color: #fff; 
+}
+
+.title{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.contactinfo ul{
+   position: relative; 
+}
+
+.contactinfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.eduinfo{
+    position: relative;
+    margin: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+.eduinfo ul{
+    margin-top: 10px;
+    position: relative;
+}
+
+.eduinfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.eduinfo ul li h5{
+    font-weight: 700;
+}
+
+.eduinfo ul li span{
+    font-size: 0.38cm;
+}
+
+
+.container .right-side{
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+.about{
+    margin-bottom: 20px;
+}
+
+.about:last-child{
+    margin-bottom:0 ;
+}
+
+.title2{
+    color: rgb(51, 91, 167);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+p{
+    letter-spacing: 1px;
+    font-size: 0.5cm;
+}
+
+.details{
+
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: larger;
+}
+
+.details span{
+    padding: 10px;
+    letter-spacing: 1px;
+    
+}
+.details ol{
+    position: relative;
+}
+
+.details ol li{
+    list-style: none;
+}
+
+@media (max-width:1000px) {
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
